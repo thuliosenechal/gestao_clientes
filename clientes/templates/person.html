@@ -1,32 +1,56 @@
-<!doctype html>
-<html lang="en">
-<head>
+{% extends 'base.html' %}
 
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+{% block title %} Lista de clientes {% endblock %}
 
+{% block main %}
 
-</head>
-<body>
+    <div class="row">
+        <div class="col">
 
+        </div>
 
-    <ul>
+        <div class="col-6">
+            <h3>Listagem de Clientes</h3>
+            <ul class="list-group">
         {% for person in persons %}
-            <li>
+            <li class="list-group-item">
                 <a href="{% url 'person_update' person.id %}">{{ person.first_name }}</a>
-                <a href="{% url 'person_delete' person.id %}">Deletar</a>
+                <a href="{% url 'person_delete' person.id %}">
+
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="trash-item" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                    </svg>
+
+                </a>
             </li>
-        {% endfor %}
-    </ul>
+                {% endfor %}
+            </ul>
 
-    <br>
-    <a href="{% url 'person_new' %}">Novo cliente</a>
+            <br>
+            <a href="{% url 'person_new' %}" class="btn btn-primary">Novo cliente</a>
 
-    <br><br><br>
-    <a href="{% url 'logout' %}">Sair</a>
+        </div>
 
-</body>
-</html>
+        <div class="col">
+            {% if user.is_authenticated %}
+            <p>Ola {{user.username }}
+                <a href="{% url 'logout' %}">
+                    <span class="badge badge-dark">Logout</span>
+                </a>
+            </p>
+
+            {% endif %}
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Desenvolvimento web com Django 3.0</span>
+        </div>
+    </footer>
+{% endblock %}
