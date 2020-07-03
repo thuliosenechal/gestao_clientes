@@ -4,11 +4,14 @@
 {% block title %} Pagina de formulario {% endblock %}
 
 {% block main %}
-    <h3>Novo Cliente</h3>
+
+    <button type="button" class="btn btn-outline-info" onclick="history.go(-1)">voltar</button>
+    <br><br><h3>Novo Cliente</h3>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form|bootstrap }}
         <button type="submit" class="btn btn-primary">Salvar</button>
+        <button type="reset" class="btn btn-primary">Limpar</button>
 
     </form>
 

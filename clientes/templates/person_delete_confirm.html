@@ -8,7 +8,9 @@
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
 
+        <button type="button" class="btn btn-outline-danger" onclick="history.go(-1)">voltar</button>
         <button type="submit" class="btn btn-danger">Deletar</button>
+
 
     </form>
 
