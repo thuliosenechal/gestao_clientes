@@ -27,5 +27,7 @@ requirements-dev.txt
 
 ![2](https://user-images.githubusercontent.com/57634027/86542757-e9aacc00-beee-11ea-9299-de5e6dbf1f48.JPG)
 
+![3](https://user-images.githubusercontent.com/57634027/86542782-21197880-beef-11ea-886b-29ee6daa3af4.JPG)
+
 
 
