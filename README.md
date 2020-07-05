@@ -22,6 +22,6 @@ requirements-dev.txt
 
 ## Screenshot:
 
-![Capturar](https://user-images.githubusercontent.com/57634027/78187372-a9960200-7444-11ea-87f1-30f074fec875.JPG)
+
 
 
