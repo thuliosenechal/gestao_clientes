@@ -21,7 +21,7 @@ Postgree
 requirements-dev.txt
 
 
-## Screenshot:
+## Screenshots:
 
 ![1](https://user-images.githubusercontent.com/57634027/86542740-ad776b80-beee-11ea-9544-89f4d6b6286f.JPG)
 
