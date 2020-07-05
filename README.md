@@ -13,7 +13,7 @@ Django 3.0
 
 Heroku
 
-Postgre
+Postgree
 
 ## Requirements:
 
