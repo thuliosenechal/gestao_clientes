@@ -12,7 +12,7 @@ jobs:
       deploy:
         provider: heroku
         api_key:
-          secure: 0d0a257f-c99f-42e9-8fca-db17e4125987
+          secure: 3KNfkW2XfYqb5bkND/pOS+TAYTwK+pF7c5qkbvmoSJhobqay20Mwm0lhCGJUZYPI3ddoVwbo16JJYrS3Wv+Q396vsNa9PhoqjsyEYmHIlwYzjWo2t4OsfqvXadxF5U4JCSNPWVp9q7eioh+lyYt23Rx6AfxTuSSFPCwVAjt52mDnYUFUjOgbq3dZsq8RvA5lUc7ZflV+mr61erGzFeuQX3v6U/NeCW/533g5miZAwMAXPnR6KNgyJMUbRKwEjBKVFinv99tj32LxaghLaHOn8KvXEa6Eucn/2JmJ05jLylBHBSBzHY/Bnm26l8YN3/foV6YY05jDALXqS2PvgyUyGDc2+XgqV40B7+4Rh+JuonnbomFOv2Mt3JO08/r+epK67+G4z+zIi+EJni12Cp14D3g66AQBTerB8bc9VqJAOI4ueb4w5fnBGa3VkSRDF1G7niBefG8yZHdYfEKLRwBtaulunsMtpyYi27Y+kfQZokjYNpf8RBLW+f/+izqCKmcwLYyC8qyqsemLclK1xTqLsdaNe90MD9SjLjXL462wSgfdj+zTpz7Uj4bnVyAex/rZ4nUjozegREAQXEwFz06zERfgpi2LYvFovOwnDLIldULXXggub685zZDZGtODREyY8zAFexxy1PrLGDbw9GKG3RlHZEey33GKnU66lLUAzU4=
         app: gestao-clientes-senecti
         on: master
         run: "python manage.py migrate"
