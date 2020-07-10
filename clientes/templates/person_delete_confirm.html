@@ -4,7 +4,7 @@
 
 {% block main %}
 
-    <h4> Tem certeza que deseja deletar (Teste) {{ person }}?</h4>
+    <h4> Tem certeza que deseja deletar {{ person }}?</h4>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
 
