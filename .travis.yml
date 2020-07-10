@@ -12,7 +12,7 @@ jobs:
       deploy:
         provider: heroku
         api_key:
-          secure: d8c6a2a3-1ef7-4ff4-8b24-ec4913ec85a1
+          secure: 0d0a257f-c99f-42e9-8fca-db17e4125987
         app: gestao-clientes-senecti
         on: master
         run: "python manage.py migrate"
