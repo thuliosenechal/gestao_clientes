@@ -11,7 +11,7 @@ jobs:
       script: /bin/true
       deploy:
         provider: heroku
-        api_key: $SECRET_KEY
+        api_key: $SECRET_KEY_TRAVIS
         app: gestao-clientes-senecti
         on: master
         run: "python manage.py migrate"
